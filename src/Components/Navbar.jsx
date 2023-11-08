@@ -1,9 +1,14 @@
 import React from 'react'
+import Logo from '../Images/'
 
 
 function Navbar() {
   return (
-    <div>Navbar</div>
+    <div>
+      <div>
+
+      </div>
+    </div>
   )
 }
 

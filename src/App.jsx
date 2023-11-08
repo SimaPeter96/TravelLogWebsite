@@ -1,17 +1,9 @@
-import React from 'react';
-import { Navbar, Hero, Footer} from './Components';
-import { hero } from '.data/mothercitytoursdata';
+import React from 'react'
 
-
-const App = () => {
+function App() {
   return (
-    <> 
-      <Navbar/>
-         <Hero hero={hero}/>
-      <Footer/>
-    </>
-    
-  );
-};
+    <div>App</div>
+  )
+}
 
-export default App;
+export default App
