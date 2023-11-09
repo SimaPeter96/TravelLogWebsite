@@ -7,9 +7,9 @@ function Navbar() {
       <div className="mx-8">
         <img src={Logo} className="logo" alt='logo' style={{ width: '80px' }} />
       </div>
-      <div className='flex space-x-4 mr-4'>
-        <button className='text-white bg-transparent border-2 border-slate-200 rounded-full'>LOGIN</button>
-        <button className='text-white border-slate-100 rounded-full'>SIGN UP</button>
+      <div className='flex space-x-6 mr-12 pb-1'>
+        <button className='text-white bg-transparent border-2 shadow-md h-9 w-50 border-slate-100 rounded-md text-xs' >LOGIN</button>
+        <button className='text-white border-slate-100 rounded-md shadow-md h-9 text-xs'>SIGN UP</button>
       </div>
     </div>
   );
