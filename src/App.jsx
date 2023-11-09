@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
+import Login from './Components/Login';
 
 
 
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Navbar/>
       <Hero/>
+      <Login/>
     </div>
   )
 }
