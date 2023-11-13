@@ -19,14 +19,16 @@ function App() {
   return (
     <div>    
       <Routes>
-        <Route element={<Layout />}>
-          <Route path='/' element={<Landing />} />
+       
+        <Route index element={<Landing/>}/>
+        <Route path='/login' element={<Login />} />
           <Route path='/profile/:id?' element={<profile />} />
+          <Route element={<Layout />}>
         </Route>
-
-          <Route path='/login' element={<Login />} />
+{/* 
+           <Route path='/login' element={<Login />} />
           <Route path='/signUp' element={<SignUp />} />
-          <Route path='/reset-password' element={<ResetPassword />} />
+          <Route path='/reset-password' element={<ResetPassword />} /> */}
       </Routes>
     </div>
   )

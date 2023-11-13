@@ -1,13 +1,12 @@
 import React from 'react'
-import Navbar from '../Components/Navbar';
-import Hero from '../Components/Hero';
+import Navbar from './Navbar';
+import Hero from './Hero';
 
 function Landing() {
   return (
     <div>
       <Navbar/>
       <Hero/>
-      
     </div>
   )
 }
