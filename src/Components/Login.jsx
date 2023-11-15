@@ -1,18 +1,15 @@
 import React from 'react'
 import BgImg1 from '../Images/BgImage.png'
-import bokaap from '../Images/bokaap.jpg'
+import Bokaap from '../Images/BokaapImg.jpg'
 
 const Login = () => {
   return (
-    <div className="flex w-full h screen">
-       <div className="w-full  flex items-center justify-centerlg:w-1/2">
-        <img src={BgImg1} alt="" className='w-1/2 h-[100vh]'/>
-           {/* <Form>
-
-           </Form> */}
+    <div className="w-screen h-screen grid grid-rows 2 md:grid-cols-2">
+       <div className="w-full h-full centered md:h-screen">
+        <img src={BgImg1} alt="" className='flex h-full w-full items-center'/>
          </div>
-         <div className="hidden lg:flex h-full items-center justify-center w-1/10">
-            <img src={bokaap} alt="" className=" flex h-full w-1/2 items-"/>
+         <div className="w-full h-full centered md:h-screen">
+            <img src={Bokaap} alt="" className=" flex h-full w-full items-center"/>
 
          </div>
 
