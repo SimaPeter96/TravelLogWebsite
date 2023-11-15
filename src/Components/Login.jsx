@@ -1,5 +1,6 @@
 import React from 'react'
 import BgImg1 from '../Images/BgImage.png'
+import bokaap from '../Images/bokaap.jpg'
 
 const Login = () => {
   return (
@@ -9,9 +10,9 @@ const Login = () => {
            {/* <Form>
 
            </Form> */}
-           <h1 className='text-black'>Mother</h1>
          </div>
-         <div className="hidden lg:flex h-full w-1/3">
+         <div className="hidden lg:flex h-full items-center justify-center w-1/10">
+            <img src={bokaap} alt="" className=" flex h-full w-1/2 items-"/>
 
          </div>
 
