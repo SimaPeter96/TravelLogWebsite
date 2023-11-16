@@ -19,7 +19,7 @@
 
   button{
     
-    @apply px-5 py-2.5 bg-[#F18C28]
+    @apply px-5 py-2.5 
   }
 
   h1{
