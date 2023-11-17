@@ -13,7 +13,7 @@ function Navbar() {
         <button className='text-white bg-transparent border-2 shadow-md h-9 w-50 border-slate-100 rounded-md text-xs' >LOGIN</button>
         </Link>
         <Link to='/signUp' className='hover:bg-transparent'> 
-        <button className='text-white border-slate-100 rounded-md shadow-md h-9 text-xs'>SIGN UP</button>
+        <button className='text-white border-slate-100 bg-amber-600 rounded-md shadow-md h-9 text-xs'>SIGN UP</button>
         </Link>
         
       </div>

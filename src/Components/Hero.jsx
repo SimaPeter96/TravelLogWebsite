@@ -5,9 +5,16 @@ function Hero() {
   return (
     <div className="w-full h-[98vh] relative">
       <img src={Img} alt="Image" className="w-full h-full object-cover" />
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div>
-          <h1 className="text-8xl font-medium mx-auto max-w-6xl pb-48 py-8 text-black mix-blend-overlay font-poppins">MOTHER CITY TOURS</h1>
+      <div className="absolute inset-0 flex flex-col items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-8xl font-medium mx-auto max-w-10xl pb-16 text-black mix-blend-overlay font-poppins">MOTHER CITY TOURS</h1>
+          <p className="text-xl text-white font-extrabold raleway italic ">Experience  Enjoy  Eplore  The  City.</p>
+        </div>
+        <div className="flex space-x-4 mt-10">
+          <button className="px-4 py-2 bg-amber-600 text-white shadow-lg rounded-xl text-sm">EXPLORE</button>
+          <button className="px-4 py-2 bg-amber-600 text-white shadow-lg rounded-xl text-sm">RESTAURANTS</button>
+          <button className="px-4 py-2 bg-amber-600 text-white shadow-lg rounded-xl text-sm">WINE FARMS</button>
+          <button className="px-4 py-2 bg-amber-600 text-white shadow-lg rounded-xl text-sm">ACTIVITIES</button>
         </div>
       </div>
     </div>
