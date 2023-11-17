@@ -8,11 +8,10 @@ const Login = () => {
        <div className="w-full h-full centered md:h-screen">
         <img src={BgImg1} alt="" className='flex h-full w-full items-center'/>
          </div>
+         
          <div className="w-full h-full centered md:h-screen">
             <img src={Bokaap} alt="" className=" flex h-full w-full items-center"/>
-
          </div>
-
      </div>
    
   )
