@@ -11,6 +11,35 @@ const Login = () => {
           <span className="text-4xl font-bold text-blue mix-blend-overlay font-poppins">
             MOTHER CITY TOURS
           </span>
+          <div className='relative h-48 w-48 mt-24 mx-8'>
+          <span className='font-bold text-white mb-8 '>Login into your account</span>
+          </div>
+          <div className='py-4'>
+            <span className='mb-2 text-md'>Email</span>
+            <input
+               type='text'
+               className='w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500'
+               name='email'
+               id='email'
+            />
+          </div>
+          <div className='py-4'>
+            <span className='mb-2 text-md'>Password</span>
+            <input 
+               type='text'
+               className='w-full p-2 border border-gray-300 rounded-md placeholder:text-gray-500'
+               name='pass'
+               id='pass'
+             />
+          </div>
+          <div className='flex justify-between w-full py-4'>
+            <div className='mr-24'>
+               <input type='checkbox' name='ch'  id='ch' className='mr-2'/>
+               <span class="text-md">Remember me</span>
+            </div>
+            <span className='font-bold text-md'>Forgot password?</span>
+
+          </div>
         </div>
       </div>
 
