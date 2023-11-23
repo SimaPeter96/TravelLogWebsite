@@ -26,11 +26,18 @@ function SignUp() {
           <h2 className='text-md font-bold  text-white font-poppins'>Create your account</h2>
         </div>
       </div>
-      <div>
+      <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 '>
+        <div className='sm:col-span-3'>
+          <label for="first-name" className='block text-sm font-mdium leading-6 text-gray-500'>First name</label>
+         
+
+        </div>
+
+        </div>
         
       </div>
       </div>
-    </div>
+  
   )
 }
 
