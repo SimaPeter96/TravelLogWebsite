@@ -1,5 +1,6 @@
 import React from 'react'
 import ImgBg from '../Images/wineImg.jpg'
+import Img from '../Images/blueBg.png'
 
 function SignUp() {
   return (
@@ -17,8 +18,18 @@ function SignUp() {
           </div>
         </div>
       </div>
-
-    
+      <div className="w-1/2 relative">
+        <img src={Img} alt=""  className="w-full h-full object-cover"></img>
+      <div className="SignUptitle absolute top-0 left-10 right-25text-center mt-10 ">
+        <span className='text-4xl font-bold text-blue mix-blend-overlay font-poppins' >SIGN UP</span>
+        <div className='subheading'>
+          <h2 className='text-md font-bold  text-white font-poppins'>Create your account</h2>
+        </div>
+      </div>
+      <div>
+        
+      </div>
+      </div>
     </div>
   )
 }
