@@ -25,15 +25,35 @@ function SignUp() {
         <div className='subheading'>
           <h2 className='text-md font-bold  text-white font-poppins'>Create your account</h2>
         </div>
+        <div>
+        <form action='#'>
+          <div className='grid grid-cols-2 gap-5'>
+            <input type="text" placeholder="Firstname" className='border border-gray-400 p-1 px-2'></input>
+            <input type="text" placeholder="Surname" className='border border-gray-400 p-1 px-2'></input>
+          </div>
+          <div className='mt-5'>
+          <input type="text" placeholder="Phone number" className='border border-gray-400 py-1 px-2 w-full'></input>
+          </div>
+          <div className='mt-5'>
+          <input type="text" placeholder="Email" className='border border-gray-400 py-1 px-2 w-full'></input>
+          </div>
+          <div className='mt-5'>
+          <input type="text" placeholder="Create password" className='border border-gray-400 py-1 px-2 w-full'></input>
+          </div>
+          <div className='mt-5'>
+          <input type="text" placeholder="Confirm password" className='border border-gray-400 py-1 px-2 w-full'></input> 
+          </div>
+          <div className='mt-5'>
+            
+
+
+          </div>
+        </form>
       </div>
-      <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 '>
-        <div className='sm:col-span-3'>
-          <label for="first-name" className='block text-sm font-mdium leading-6 text-gray-500'>First name</label>
-         
-
-        </div>
-
-        </div>
+        
+      </div>
+     
+     
         
       </div>
       </div>
