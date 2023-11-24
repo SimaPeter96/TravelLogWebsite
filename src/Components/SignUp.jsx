@@ -32,16 +32,16 @@ function SignUp() {
             <input type="text" placeholder="Surname" className='border border-gray-400 p-1 px-2'></input>
           </div>
           <div className='mt-5'>
-          <input type="text" placeholder="Phone number" className='border border-gray-400 py-1 px-2 w-full'></input>
+            <input type="text" placeholder="Phone number" className='border border-gray-400 py-1 px-2 w-full'></input>
           </div>
           <div className='mt-5'>
-          <input type="text" placeholder="Email" className='border border-gray-400 py-1 px-2 w-full'></input>
+            <input type="text" placeholder="Email" className='border border-gray-400 py-1 px-2 w-full'></input>
           </div>
           <div className='mt-5'>
-          <input type="text" placeholder="Create password" className='border border-gray-400 py-1 px-2 w-full'></input>
+            <input type="text" placeholder="Create password" className='border border-gray-400 py-1 px-2 w-full'></input>
           </div>
           <div className='mt-5'>
-          <input type="text" placeholder="Confirm password" className='border border-gray-400 py-1 px-2 w-full'></input> 
+            <input type="text" placeholder="Confirm password" className='border border-gray-400 py-1 px-2 w-full'></input> 
           </div>
           <div className='mt-5'>
             
