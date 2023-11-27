@@ -1,6 +1,7 @@
 import React from 'react'
 import ImgBg from '../Images/wineImg.jpg'
 import Img from '../Images/blueBg.png'
+import google from '../assets/google.svg'
 
 function SignUp() {
   return (
@@ -43,11 +44,20 @@ function SignUp() {
           <div className='mt-5'>
             <input type="text" placeholder="Confirm password" className='border border-gray-400 py-1 px-2 w-full'></input> 
           </div>
-          <div className='mt-5'>
-            
-
-
+          <div className='mr-24'>
+              <input type='checkbox' name='ch'  id='ch' className='mr-2'/>
+              <span className="text-md text-white">I accept the Terms of Use & Privacy Policy </span>
           </div>
+          <div className='mt-5'>
+            <button className='w-full bg-transparent border border-white py-2 text-white hover:bg-blue-400'>SIGN UP</button>
+          </div>
+          <div className='mt-5'>
+            <button className='w-full bg-white border border-white py-2 text-black hover:bg-transparent'>
+            <img src={google} alt='' className='w-6 h-6 inline mr-2' />
+              SIGN UP WITH GOOGLE</button>
+          </div>
+            
+         
         </form>
       </div>
         
