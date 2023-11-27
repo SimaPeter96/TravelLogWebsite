@@ -22,37 +22,37 @@ function SignUp() {
       <div className="w-1/2 relative">
         <img src={Img} alt=""  className="w-full h-full object-cover"></img>
       <div className="SignUptitle absolute top-0 left-10 right-25text-center mt-10 ">
-        <span className='text-4xl font-bold text-blue mix-blend-overlay font-poppins' >SIGN UP</span>
-        <div className='subheading'>
+        <span className='text-4xl font-bold text-blue mix-blend-overlay font-poppins ml-16' >SIGN UP</span>
+        <div className='subheading pt-6 ml-16'>
           <h2 className='text-md font-bold  text-white font-poppins'>Create your account</h2>
         </div>
-        <div>
+        <div className='ml-16'>
         <form action='#'>
           <div className='grid grid-cols-2 gap-5'>
-            <input type="text" placeholder="Firstname" className='border border-gray-400 p-1 px-2'></input>
-            <input type="text" placeholder="Surname" className='border border-gray-400 p-1 px-2'></input>
+            <input type="text" placeholder="Firstname" className='border border-gray-400 p-1 px-2 rounded'></input>
+            <input type="text" placeholder="Surname" className='border border-gray-400 p-1 px-2 rounded'></input>
           </div>
           <div className='mt-5'>
-            <input type="text" placeholder="Phone number" className='border border-gray-400 py-1 px-2 w-full'></input>
+            <input type="text" placeholder="Phone number" className='border border-gray-400 py-1 px-2 w-full rounded'></input>
           </div>
           <div className='mt-5'>
-            <input type="text" placeholder="Email" className='border border-gray-400 py-1 px-2 w-full'></input>
+            <input type="text" placeholder="Email" className='border border-gray-400 py-1 px-2 w-full rounded'></input>
           </div>
           <div className='mt-5'>
-            <input type="text" placeholder="Create password" className='border border-gray-400 py-1 px-2 w-full'></input>
+            <input type="text" placeholder="Create password" className='border border-gray-400 py-1 px-2 w-full rounded'></input>
           </div>
           <div className='mt-5'>
-            <input type="text" placeholder="Confirm password" className='border border-gray-400 py-1 px-2 w-full'></input> 
+            <input type="text" placeholder="Confirm password" className='border border-gray-400 py-1 px-2 w-full rounded'></input> 
           </div>
           <div className='mr-24'>
               <input type='checkbox' name='ch'  id='ch' className='mr-2'/>
               <span className="text-md text-white">I accept the Terms of Use & Privacy Policy </span>
           </div>
           <div className='mt-5'>
-            <button className='w-full bg-transparent border border-white py-2 text-white hover:bg-blue-400'>SIGN UP</button>
+            <button className='w-full bg-transparent border border-white py-2 text-white hover:bg-blue-400 rounded shadow-inner  '>SIGN UP</button>
           </div>
           <div className='mt-5'>
-            <button className='w-full bg-white border border-white py-2 text-black hover:bg-transparent'>
+            <button className='w-full bg-white border border-white py-2 text-black hover:bg-transparent rounded shadow-inner '>
             <img src={google} alt='' className='w-6 h-6 inline mr-2' />
               SIGN UP WITH GOOGLE</button>
           </div>
