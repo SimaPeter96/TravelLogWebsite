@@ -3,22 +3,49 @@ import BgImg1 from '../Images/BgImage.png';
 import Bokaap from '../Images/BokaapImg.jpg';
 import google from '../assets/google.svg';
 
+
 const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [emailError, setEmailError] = useState('');
+    const [passwordError, setPasswordError] = useState('');
 
-  const handleSubmit = () => {
-    if (!email) {
-      setError('Email is required');
-      return;
-    }
-    if (!password) {
-      setError('Password is required!');
-      return;
-    }
-  };
+    const validateForm = () => {
+        let isValid = true;
+    
+        // Basic email validation
+        if (!email) {
+          setEmailError('Email is required');
+          isValid = false;
+        } else {
+          setEmailError('Please enter a valid email');
+        }
+    
+        // Basic password validation
+        if (!password) {
+          setPasswordError('Password is required');
+          isValid = false;
+        } else {
+          setPasswordError('Password must be at least 8 characters long');
+        }
+    
+        // Additional validation logic can be added here
+    
+        return isValid;
+      };
+    
+      const handleSubmit = () => {
+        const isValid = validateForm();
+    
+        if (isValid) {
+          // Proceed with login logic
+          // ...
+        }
+      };
+  
+   
 
+  
   return (
     <div className="w-screen h-screen flex flex-col lg:flex-row">
       <div className="w-full lg:w-1/2 relative">
@@ -45,7 +72,7 @@ const Login = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            {error && error.includes('Email is required') && <div className='text-red-500'>{error}</div>}
+            {emailError && <div className="text-red-500">{emailError}</div>}
           </div>
           <div className="py-0">
             <div className="passwordplaceholder">
@@ -60,8 +87,11 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            {error && error.includes('Password is required') && <div className='text-red-500'>{error}</div>}
-          </div>
+             
+             {passwordError && <div className="text-red-500">{passwordError}</div>}
+
+            </div>
+
           <div className="flex justify-between items-center py-4">
             <div className="mr-24">
               <input type="checkbox" name="ch" id="ch" className="mr-2" />
@@ -106,4 +136,4 @@ const Login = () => {
   );
 };
 
-export default Login
+export default Login;
