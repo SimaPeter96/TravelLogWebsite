@@ -1,9 +1,78 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ImgBg from '../Images/wineImg.jpg'
 import Img from '../Images/blueBg.png'
 import google from '../assets/google.svg'
 
 function SignUp() {
+    const [formData, setFormData] = useState({
+      firstName: '',
+      surname: '',
+      phoneNumber: '',
+      email: '',
+      createPassword: '',
+      confirmPassword: '',
+    });
+
+    const [firstName, setFirstName] = useState({});
+    const [surname, setSurname] = useState({});
+    const [phoneNumber, setPhoneNumber] = useState({});
+    const [email, setEmail] = useState({});
+    const [createPassword, setCreatePassword] = useState({});
+    const [confirmPassword, setConfirmPassword] = useState({});
+
+
+    const handleChange = (e) => {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+      });
+    };
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+    };
+
+    // Validate inputs
+    const errors = {};
+
+    if (!formaData.firstName) {
+      errors.firstName = 'Name is required';
+    }
+
+    if (!formaData.surname) {
+      errors.firstName = 'Surname is required';
+    }
+
+    if (!formaData.phoneNumber) {
+      errors.firstName = 'Phonenumber is required';
+    }
+
+    if(!formData.email){
+      errors.email = 'Email is required';
+    }else if (!isValidateEmail(formData.email)) {
+      errors.email = 'Invalid email address';
+    }
+
+    if(!formData.createPassword) {
+      errors.password = 'Create Password';
+    }else if (formData.createPassword.length <8) {
+      errors.createpassword = 'Password must be atleast 8 characters long';
+    }
+
+    if (Object.keys(errors).length > 0) {
+      setErrors(errors);
+    } else {
+      //submit the form
+    }
+
+    const isValidateEmail = (email) => {
+      const emailRegex= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    };
+
+    
+
+
   return (
     <div className='w-screen h-screen flex'>
       <div className='w-1/2 relative'>
