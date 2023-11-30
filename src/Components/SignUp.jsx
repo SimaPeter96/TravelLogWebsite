@@ -2,76 +2,38 @@ import React, { useState } from 'react'
 import ImgBg from '../Images/wineImg.jpg'
 import Img from '../Images/blueBg.png'
 import google from '../assets/google.svg'
+import validator from 'validator';
 
 function SignUp() {
-    const [formData, setFormData] = useState({
-      firstName: '',
-      surname: '',
-      phoneNumber: '',
-      email: '',
-      createPassword: '',
-      confirmPassword: '',
-    });
-
-    const [firstName, setFirstName] = useState({});
-    const [surname, setSurname] = useState({});
-    const [phoneNumber, setPhoneNumber] = useState({});
-    const [email, setEmail] = useState({});
-    const [createPassword, setCreatePassword] = useState({});
-    const [confirmPassword, setConfirmPassword] = useState({});
-
-
-    const handleChange = (e) => {
-      setFormData({
-        ...formData,
-        [e.target.name]: e.target.value,
-      });
-    };
-
-    const handleSubmit = (e) => {
-      e.preventDefault();
-    };
-
-    // Validate inputs
-    const errors = {};
-
-    if (!formaData.firstName) {
-      errors.firstName = 'Name is required';
+  const [firstName, setFirstName] = useState('');
+  const [surname, setSurname] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  
+  // Validation functions
+  const validateEmail = () => {
+    if (!validator.isEmail(email)) {
+      // Handle invalid email
+      console.log('Invalid email');
     }
+  };
 
-    if (!formaData.surname) {
-      errors.firstName = 'Surname is required';
+  const validatePassword = () => {
+    if (password !== confirmPassword) {
+      // Handle password mismatch
+      console.log('Passwords do not match');
     }
+  };
 
-    if (!formaData.phoneNumber) {
-      errors.firstName = 'Phonenumber is required';
-    }
-
-    if(!formData.email){
-      errors.email = 'Email is required';
-    }else if (!isValidateEmail(formData.email)) {
-      errors.email = 'Invalid email address';
-    }
-
-    if(!formData.createPassword) {
-      errors.password = 'Create Password';
-    }else if (formData.createPassword.length <8) {
-      errors.createpassword = 'Password must be atleast 8 characters long';
-    }
-
-    if (Object.keys(errors).length > 0) {
-      setErrors(errors);
-    } else {
-      //submit the form
-    }
-
-    const isValidateEmail = (email) => {
-      const emailRegex= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return emailRegex.test(email);
-    };
-
-    
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Perform form submission or further validation
+    validateEmail();
+    validatePassword();
+    // ...
+  };
 
   return (
     <div className='w-screen h-screen flex'>
@@ -98,8 +60,14 @@ function SignUp() {
         <div className='ml-16'>
         <form action='#'>
           <div className='grid grid-cols-2 gap-5'>
-            <input type="text" placeholder="Firstname" className='border border-gray-400 p-1 px-2 rounded'></input>
-            <input type="text" placeholder="Surname" className='border border-gray-400 p-1 px-2 rounded'></input>
+            <input type="text" 
+            placeholder="Firstname" 
+            className='border border-gray-400 p-1 px-2 rounded'>
+            </input>
+            <input type="text" 
+            placeholder="Surname" 
+            className='border border-gray-400 p-1 px-2 rounded'>
+            </input>
           </div>
           <div className='mt-5'>
             <input type="text" placeholder="Phone number" className='border border-gray-400 py-1 px-2 w-full rounded'></input>
